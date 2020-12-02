@@ -1,0 +1,65 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RAC02-05SGB:RAC02-05SGB PS?
+U 1 1 5FC797AC
+P 5650 3100
+F 0 "PS?" H 5650 3567 50  0000 C CNN
+F 1 "RAC02-05SGB" H 5650 3476 50  0000 C CNN
+F 2 "CONV_RAC02-05SGB" H 5650 3100 50  0001 L BNN
+F 3 "" H 5650 3100 50  0001 L BNN
+F 4 "Manufacturer Recommendations" H 5650 3100 50  0001 L BNN "STANDARD"
+F 5 "19mm" H 5650 3100 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 6 "Recom" H 5650 3100 50  0001 L BNN "MANUFACTURER"
+F 7 "1" H 5650 3100 50  0001 L BNN "PARTREV"
+	1    5650 3100
+	1    0    0    -1  
+$EndComp
+Text GLabel 4050 2900 0    50   Input ~ 0
+input-L
+Text GLabel 4050 3300 0    50   Input ~ 0
+input-N
+Wire Wire Line
+	4050 2900 4950 2900
+Wire Wire Line
+	4050 3300 4950 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5FC7E372
+P 6900 3300
+F 0 "#PWR?" H 6900 3050 50  0001 C CNN
+F 1 "GND" H 6905 3127 50  0000 C CNN
+F 2 "" H 6900 3300 50  0001 C CNN
+F 3 "" H 6900 3300 50  0001 C CNN
+	1    6900 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3300 6900 3300
+$Comp
+L power:+5V #PWR?
+U 1 1 5FC7EAA0
+P 6900 2900
+F 0 "#PWR?" H 6900 2750 50  0001 C CNN
+F 1 "+5V" H 6915 3073 50  0000 C CNN
+F 2 "" H 6900 2900 50  0001 C CNN
+F 3 "" H 6900 2900 50  0001 C CNN
+	1    6900 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2900 6900 2900
+$EndSCHEMATC

@@ -1,0 +1,133 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP32-DEVKITC-32D:ESP32-DEVKITC-32D U?
+U 1 1 5FC83F36
+P 5350 3450
+F 0 "U?" H 5350 4617 50  0000 C CNN
+F 1 "ESP32-DEVKITC-32D" H 5350 4526 50  0000 C CNN
+F 2 "MODULE_ESP32-DEVKITC-32D" H 5350 3450 50  0001 L BNN
+F 3 "" H 5350 3450 50  0001 L BNN
+F 4 "4" H 5350 3450 50  0001 L BNN "PARTREV"
+F 5 "Espressif Systems" H 5350 3450 50  0001 L BNN "MANUFACTURER"
+	1    5350 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5FC85905
+P 3450 2550
+F 0 "R?" V 3245 2550 50  0000 C CNN
+F 1 "1.8k" V 3336 2550 50  0000 C CNN
+F 2 "" H 3450 2550 50  0001 C CNN
+F 3 "~" H 3450 2550 50  0001 C CNN
+	1    3450 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5FC87159
+P 3700 2800
+F 0 "R?" H 3768 2846 50  0000 L CNN
+F 1 "3.3k" H 3768 2755 50  0000 L CNN
+F 2 "" H 3700 2800 50  0001 C CNN
+F 3 "~" H 3700 2800 50  0001 C CNN
+	1    3700 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5FC87FBB
+P 2850 2400
+F 0 "#PWR?" H 2850 2250 50  0001 C CNN
+F 1 "+5V" H 2865 2573 50  0000 C CNN
+F 2 "" H 2850 2400 50  0001 C CNN
+F 3 "" H 2850 2400 50  0001 C CNN
+	1    2850 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2400 2850 2550
+Wire Wire Line
+	2850 2550 3350 2550
+Wire Wire Line
+	3550 2550 3700 2550
+Wire Wire Line
+	3700 2550 3700 2700
+$Comp
+L power:GND #PWR?
+U 1 1 5FC8AFCB
+P 3700 3100
+F 0 "#PWR?" H 3700 2850 50  0001 C CNN
+F 1 "GND" H 3705 2927 50  0000 C CNN
+F 2 "" H 3700 3100 50  0001 C CNN
+F 3 "" H 3700 3100 50  0001 C CNN
+	1    3700 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2900 3700 3100
+Wire Wire Line
+	3700 2550 4550 2550
+Connection ~ 3700 2550
+$Comp
+L Relay_SolidState:MOC3031M U?
+U 1 1 5FC8F1E4
+P 7100 2750
+F 0 "U?" H 7100 3075 50  0000 C CNN
+F 1 "MOC3031M" H 7100 2984 50  0000 C CNN
+F 2 "" H 6900 2550 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MOC3043M-D.pdf" H 7100 2750 50  0001 L CNN
+	1    7100 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FC942BF
+P 6600 2850
+F 0 "#PWR?" H 6600 2600 50  0001 C CNN
+F 1 "GND" H 6605 2677 50  0000 C CNN
+F 2 "" H 6600 2850 50  0001 C CNN
+F 3 "" H 6600 2850 50  0001 C CNN
+	1    6600 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2850 6600 2850
+$Comp
+L Device:R_Small_US R?
+U 1 1 5FC95830
+P 6500 2650
+F 0 "R?" V 6295 2650 50  0000 C CNN
+F 1 "270" V 6386 2650 50  0000 C CNN
+F 2 "" H 6500 2650 50  0001 C CNN
+F 3 "~" H 6500 2650 50  0001 C CNN
+	1    6500 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 2650 6400 2650
+Wire Wire Line
+	6600 2650 6800 2650
+Wire Wire Line
+	7400 2650 7700 2650
+Wire Wire Line
+	7400 2850 7700 2850
+Text HLabel 7700 2650 2    50   Input ~ 0
+in-L
+Text HLabel 7700 2850 2    50   Input ~ 0
+out-L
+$EndSCHEMATC

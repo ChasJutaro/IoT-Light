@@ -1,0 +1,28 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 2600 1750 1350 1350
+U 5FC78A32
+F0 "Sheet5FC78A31" 50
+F1 "ACDC.sch" 50
+$EndSheet
+$Sheet
+S 3100 3400 1650 1000
+U 5FC82947
+F0 "Sheet5FC82946" 50
+F1 "ESP32.sch" 50
+$EndSheet
+$EndSCHEMATC

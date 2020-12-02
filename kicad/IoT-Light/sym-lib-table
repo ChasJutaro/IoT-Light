@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name RAC02-05SGB)(type Legacy)(uri /home/chaslu/Documents/IoT-Light/include/symbol/RAC02-05SGB.lib)(options "")(descr ""))
+  (lib (name ESP32-DEVKITC-32D)(type Legacy)(uri /home/chaslu/Documents/IoT-Light/include/symbol/ESP32-DEVKITC-32D.lib)(options "")(descr ""))
+)
